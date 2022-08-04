@@ -18,6 +18,9 @@ public final class TestUtils {
     final private static String NOW_IN_SCHOOL = "You are in school or have graduated now";
     final private static String PREV_DRIVE = PERM_DRIVE.concat(LIM_TO_DRIVE);
     final private static String PREV_TO_SCHOOL = PERM_TO_SCHOOL.concat(LIM_TO_SCHOOL);
+    final private static String SCORES = "Test scores: ";
+    final private static String VALUE = "Assign a value: ";
+    final private static String FIN = "Final assessment: ";
     final private static String SP = "\n";
 
     private static String countHowLongToWait(int age) {
@@ -74,6 +77,17 @@ public final class TestUtils {
                 .append(Q3)
                 .append(getApprovalByAge(YE, age))
                 .append(NOW_IN_SCHOOL)
+                .toString();
+    }
+
+    public static String createTextFinalAssessment(int scores, String value, String f_a_) {
+
+        return new StringBuilder()
+                .append(SCORES).append(scores)
+                .append(SP)
+                .append(VALUE).append(value)
+                .append(SP)
+                .append(FIN).append(f_a_)
                 .toString();
     }
 }
