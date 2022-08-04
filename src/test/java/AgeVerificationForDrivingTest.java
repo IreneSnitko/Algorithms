@@ -35,7 +35,6 @@ public class AgeVerificationForDrivingTest {
         Assertions.assertEquals(expectedResult, actualResult);
     }
 
-
     @Order(3)
     @Test
     public void testAgeVerificationForDrivingAt18() {
