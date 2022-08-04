@@ -1,7 +1,6 @@
 import org.junit.jupiter.api.*;
 
-import static Utils.TestUtils.createNoForDriving;
-import static Utils.TestUtils.createYesForDriving;
+import static Utils.TestUtils.*;
 
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 
@@ -18,7 +17,7 @@ public class AgeVerificationForDrivingTest {
     @Test
     public void testAgeVerificationForDrivingMoreThan18() {
 
-        String expectedResult = createYesForDriving(19);
+        String expectedResult = createTextYesForDriving(19);
 
         String actualResult = avd.verifyAgeForDriving(19);
 
@@ -29,7 +28,7 @@ public class AgeVerificationForDrivingTest {
     @Test
     public void testAgeVerificationForDrivingLessThan18() {
 
-        String expectedResult = createNoForDriving(17);
+        String expectedResult = createTextNoForDriving(17);
 
         String actualResult = avd.verifyAgeForDriving(17);
 
@@ -39,9 +38,9 @@ public class AgeVerificationForDrivingTest {
 
     @Order(3)
     @Test
-    public void testAgeVerificationForDriving18() {
+    public void testAgeVerificationForDrivingAt18() {
 
-        String expectedResult = createYesForDriving(18);
+        String expectedResult = createTextYesForDriving(18);
 
         String actualResult = avd.verifyAgeForDriving(18);
 
@@ -72,7 +71,7 @@ public class AgeVerificationForDrivingTest {
     @Test
     public void testAgeVerificationForDrivingLessThan100() {
 
-        String expectedResult = createYesForDriving(99);
+        String expectedResult = createTextYesForDriving(99);
 
         String actualResult = avd.verifyAgeForDriving(99);
 
@@ -80,7 +79,7 @@ public class AgeVerificationForDrivingTest {
     }
 
     @Test
-    public void testAgeVerificationForDriving100() {
+    public void testAgeVerificationForDrivingAt100() {
 
         String expectedResult = "The age is incorrect!";
 
@@ -99,10 +98,23 @@ public class AgeVerificationForDrivingTest {
         Assertions.assertEquals(expectedResult, actualResult);
     }
 
+    @Test
+    public void testAgeVerificationForDrivingIntMax() {
 
+        String expectedResult = "The age is incorrect!";
 
+        String actualResult = avd.verifyAgeForDriving(Integer.MAX_VALUE);
 
+        Assertions.assertEquals(expectedResult, actualResult);
+    }
 
+    @Test
+    public void testAgeVerificationForDrivingIntMin() {
 
+        String expectedResult = "The age is incorrect!";
 
+        String actualResult = avd.verifyAgeForDriving(Integer.MIN_VALUE);
+
+        Assertions.assertEquals(expectedResult, actualResult);
+    }
 }
