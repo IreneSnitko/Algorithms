@@ -1,5 +1,5 @@
 
-### Simple algorithms with the if-else switch Statements |  Tests__Maven_JUnit ###
+### Simple algorithms with the if-else Statements |  Tests__Maven_JUnit ###
 ***
 #### Algorithms | `src/main/java`: ####
 
