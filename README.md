@@ -5,7 +5,7 @@
 ***
 #### Algorithms | `src/main/java`: ####
 
-`AgeVerificationForDriving`        age verification for getting a license and driving a car
+`AgeVerificationForDriving` (age verification for getting a license and driving a car)
 
 `AgeVerificationForGoToSchool`     age verification to start school (from 5 years)
 
