@@ -1,10 +1,8 @@
 
 ## Simple algorithms with the if-else and switch Statements ##
-
-
+***
 ### Tests__Maven_JUnit ###
 ***
-
 #### Algorithms | src/main/java: ####
 
 `AgeVerificationForDriving`   | age verification for getting a license and driving a car
