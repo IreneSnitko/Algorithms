@@ -1,17 +1,16 @@
 
-Simple algorithms with the if-else and switch Statements
-========================================================
-
-Tests__Maven_JUnit
-------------------
+## Simple algorithms with the if-else and switch Statements ##
 
 
-Algorithms | src/main/java:
+### Tests__Maven_JUnit ###
 
-AgeVerificationForDriving    | age verification for getting a license and driving a car
 
-AgeVerificationForGoToSchool | age verification to start school (from 5 years)
+> Algorithms | src/main/java:
 
-CalculationOfFinalAssessment | calculation of the final assessment based on the assigned `test scores`
+>> AgeVerificationForDriving    | age verification for getting a license and driving a car
 
-DigitsVerificationOfShort    | verification the variable `short` for the value of digits
+>> AgeVerificationForGoToSchool | age verification to start school (from 5 years)
+
+>> CalculationOfFinalAssessment | calculation of the final assessment based on the assigned `test scores`
+
+>> DigitsVerificationOfShort    | verification the variable `short` for the value of digits
