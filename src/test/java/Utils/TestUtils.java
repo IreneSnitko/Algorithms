@@ -4,24 +4,30 @@ public final class TestUtils {
 
     final private static String YE = "Yes";
     final private static String NO = "No";
+    final private static String SP = "\n";
     final private static String AGE = "Your age is ";
-    final private static String MORE = "more than ";
-    final private static String Q = AGE.concat("18? ");
-    final private static String Q2 = AGE.concat("5? ");
-    final private static String Q3 = AGE.concat(MORE).concat("5? ");
     final private static String LIMIT = " only from the age of ";
-    final private static String LIM_TO_DRIVE = LIMIT.concat("18");
-    final private static String LIM_TO_SCHOOL =LIMIT.concat("5");
+
+    final private static String Q = AGE.concat("18? ");
     final private static String YOU_CAN = "You can ";
     final private static String PERM_DRIVE = YOU_CAN.concat("get a driving license and drive a car");
-    final private static String PERM_TO_SCHOOL = YOU_CAN.concat("go to school");
-    final private static String NOW_IN_SCHOOL = "You are in school or have graduated now";
+    final private static String LIM_TO_DRIVE = LIMIT.concat("18");
     final private static String PREV_DRIVE = PERM_DRIVE.concat(LIM_TO_DRIVE);
+
+    final private static String Q2 = AGE.concat("5? ");
+    final private static String MORE = "more than ";
+    final private static String PERM_TO_SCHOOL = YOU_CAN.concat("go to school");
+    final private static String LIM_TO_SCHOOL =LIMIT.concat("5");
     final private static String PREV_TO_SCHOOL = PERM_TO_SCHOOL.concat(LIM_TO_SCHOOL);
+    final private static String Q3 = AGE.concat(MORE).concat("5? ");
+    final private static String NOW_IN_SCHOOL = "You are in school or have graduated now";
+
     final private static String SCORES = "Test scores: ";
     final private static String VALUE = "Assign a value: ";
     final private static String FIN = "Final assessment: ";
-    final private static String SP = "\n";
+
+    final private static String It_S = "It’s a ";
+    final private static String DIGIT_NUM = "-digit number: ";
 
     private static String countHowLongToWait(int age) {
 
@@ -89,5 +95,19 @@ public final class TestUtils {
                 .append(SP)
                 .append(FIN).append(f_a_)
                 .toString();
+    }
+
+    public static String createTextShortValue(String shortNumber){
+
+        return "The value of the variable short = "
+                .concat(String.valueOf(shortNumber))
+                .concat(SP);
+    }
+
+    public static String createTextDigitValue(String numD, int num) {
+
+        return It_S.concat(numD)
+                .concat(DIGIT_NUM)
+                .concat(String.valueOf(num));
     }
 }
