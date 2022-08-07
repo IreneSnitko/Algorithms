@@ -9,4 +9,6 @@
 
 `CalculationOfFinalAssessment`------> calculation of the final assessment based on the assigned test scores
 
+`DeterminationSmallestValue`--------> determination the smallest value of three numbers
+
 `DigitsVerificationOfShort`---------> verification the variable `short` for the value of digits
