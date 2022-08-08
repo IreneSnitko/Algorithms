@@ -110,4 +110,14 @@ public final class TestUtils {
                 .concat(DIGIT_NUM)
                 .concat(String.valueOf(num));
     }
+
+    public static String createReceiptText(String productName, String price, String weight, String total) {
+
+        return new StringBuilder()
+                .append("Product name: ").append(productName).append(SP)
+                .append("Price per 1 kg of goods: ").append(price).append(SP)
+                .append("Quantity: ").append(weight).append(SP)
+                .append("Total: ").append(total)
+                .toString();
+    }
 }
