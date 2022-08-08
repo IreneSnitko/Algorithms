@@ -9,6 +9,8 @@
 
 `CalculationOfFinalAssessment`------> calculation of the final assessment based on the assigned test scores
 
+`CalculationReceiptForPurchase`-----> calculation of the receipt data and the amount of payment for the purchase
+
 `DeterminationSmallestValue`--------> determination the smallest value of three numbers
 
 `DigitsVerificationOfShort`---------> verification the variable `short` for the value of digits
