@@ -29,6 +29,9 @@ public final class TestUtils {
     final private static String It_S = "It’s a ";
     final private static String DIGIT_NUM = "-digit number: ";
 
+    final private static String YEAR = "If your year of birth is ";
+    final private static String LUCKY_NUM = ", your lucky number is ";
+
     private static String countHowLongToWait(int age) {
 
         return "Wait another years: ".concat(String.valueOf(5 - age));
@@ -118,6 +121,16 @@ public final class TestUtils {
                 .append("Price per 1 kg of goods: ").append(price).append(SP)
                 .append("Quantity: ").append(weight).append(SP)
                 .append("Total: ").append(total)
+                .toString();
+    }
+
+    public static String createTextWithLuckyNumber(int year, int luckyNum) {
+
+        return new StringBuilder()
+                .append(YEAR)
+                .append(year)
+                .append(LUCKY_NUM)
+                .append(luckyNum)
                 .toString();
     }
 }
