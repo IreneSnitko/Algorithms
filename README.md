@@ -11,6 +11,8 @@
 
 `CalculationReceiptForPurchase`-----> calculation of the receipt data and the amount of payment for the purchase
 
+`CalculationYourLuckyNumber`--------> calculation of the lucky number by year of birth
+
 `DeterminationSmallestValue`--------> determination the smallest value of three numbers
 
 `DigitsVerificationOfShort`---------> verification the variable `short` for the value of digits
