@@ -13,6 +13,8 @@
 
 `CalculationYourLuckyNumber`--------> calculation of the lucky number by year of birth
 
+`DefinitionOfLeapYear`--------------> the algorithm determines the leap year or not
+
 `DeterminationSmallestValue`--------> determination the smallest value of three numbers
 
 `DigitsVerificationOfShort`---------> verification the variable `short` for the value of digits
