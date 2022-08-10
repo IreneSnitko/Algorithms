@@ -13,7 +13,7 @@
 
 `CalculationYourLuckyNumber`--------> calculation of the lucky number by year of birth
 
-`DefinitionOfLeapYear`--------------> the algorithm determines the leap year or not
+`DefinitionOfLeapYear`--------------> the algorithm defines the leap year or not
 
 `DeterminationSmallestValue`--------> determination the smallest value of three numbers
 
