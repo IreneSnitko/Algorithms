@@ -2,35 +2,38 @@ package Utils;
 
 public final class TestUtils {
 
-    final private static String YE = "Yes";
-    final private static String NO = "No";
-    final private static String SP = "\n";
-    final private static String AGE = "Your age is ";
-    final private static String LIMIT = " only from the age of ";
+    private static final String YE = "Yes";
+    private static final String NO = "No";
+    private static final String SP = "\n";
+    private static final String AGE = "Your age is ";
+    private static final String LIMIT = " only from the age of ";
 
-    final private static String Q = AGE.concat("18? ");
-    final private static String YOU_CAN = "You can ";
-    final private static String PERM_DRIVE = YOU_CAN.concat("get a driving license and drive a car");
-    final private static String LIM_TO_DRIVE = LIMIT.concat("18");
-    final private static String PREV_DRIVE = PERM_DRIVE.concat(LIM_TO_DRIVE);
+    private static final String Q = AGE.concat("18? ");
+    private static final String YOU_CAN = "You can ";
+    private static final String PERM_DRIVE = YOU_CAN.concat("get a driving license and drive a car");
+    private static final String LIM_TO_DRIVE = LIMIT.concat("18");
+    private static final String PREV_DRIVE = PERM_DRIVE.concat(LIM_TO_DRIVE);
 
-    final private static String Q2 = AGE.concat("5? ");
-    final private static String MORE = "more than ";
-    final private static String PERM_TO_SCHOOL = YOU_CAN.concat("go to school");
-    final private static String LIM_TO_SCHOOL =LIMIT.concat("5");
-    final private static String PREV_TO_SCHOOL = PERM_TO_SCHOOL.concat(LIM_TO_SCHOOL);
-    final private static String Q3 = AGE.concat(MORE).concat("5? ");
-    final private static String NOW_IN_SCHOOL = "You are in school or have graduated now";
+    private static final String Q2 = AGE.concat("5? ");
+    private static final String MORE = "more than ";
+    private static final String PERM_TO_SCHOOL = YOU_CAN.concat("go to school");
+    private static final String LIM_TO_SCHOOL =LIMIT.concat("5");
+    private static final String PREV_TO_SCHOOL = PERM_TO_SCHOOL.concat(LIM_TO_SCHOOL);
+    private static final String Q3 = AGE.concat(MORE).concat("5? ");
+    private static final String NOW_IN_SCHOOL = "You are in school or have graduated now";
 
-    final private static String SCORES = "Test scores: ";
-    final private static String VALUE = "Assign a value: ";
-    final private static String FIN = "Final assessment: ";
+    private static final String SCORES = "Test scores: ";
+    private static final String VALUE = "Assign a value: ";
+    private static final String FIN = "Final assessment: ";
 
-    final private static String It_S = "It’s a ";
-    final private static String DIGIT_NUM = "-digit number: ";
+    private static final String It_S = "It’s a ";
+    private static final String DIGIT_NUM = "-digit number: ";
 
-    final private static String YEAR = "If your year of birth is ";
-    final private static String LUCKY_NUM = ", your lucky number is ";
+    private static final String YEAR = "If your year of birth is ";
+    private static final String LUCKY_NUM = ", your lucky number is ";
+
+    private static final String THE_YEAR = "The year ";
+    private static final String IS = " is ";
 
     private static String countHowLongToWait(int age) {
 
@@ -131,6 +134,16 @@ public final class TestUtils {
                 .append(year)
                 .append(LUCKY_NUM)
                 .append(luckyNum)
+                .toString();
+    }
+
+    public static String createTextLeapYear(int year, String yes_or_not) {
+
+        return new StringBuilder()
+                .append(THE_YEAR)
+                .append(year)
+                .append(IS)
+                .append(yes_or_not)
                 .toString();
     }
 }
