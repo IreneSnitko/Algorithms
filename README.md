@@ -18,3 +18,6 @@
 `DeterminationSmallestValue`--------> determination the smallest value of three numbers
 
 `DigitsVerificationOfShort`---------> verification the variable `short` for the value of digits
+
+***
+#### Tests for these algorithms | `src/test/java`: ####
