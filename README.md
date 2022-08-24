@@ -20,6 +20,6 @@
 
 ***
 
-#### Tests for these algorithms | `src/test/java` ####
+#### Tests for these algorithms | `src/test/java:` ####
 
 > each class has tests for one algorithm
