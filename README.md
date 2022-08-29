@@ -1,4 +1,4 @@
-## Simple algorithms with the if-else Statements |  Tests__Maven_JUnit ##
+## Simple algorithms with the if-else statements##
 ***
 #### Algorithms | `src/main/java`: ####
 
@@ -20,6 +20,6 @@
 
 ***
 
-#### Tests for these algorithms | `src/test/java:` ####
+#### Tests for these algorithms | Maven | JUnit | `src/test/java:` ####
 
 > each class has tests for one algorithm
