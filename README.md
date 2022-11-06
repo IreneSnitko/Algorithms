@@ -1,4 +1,4 @@
-## Simple algorithms with the if-else statements##
+## Simple algorithms with the if-else statements ##
 ***
 #### Algorithms | `src/main/java`: ####
 
